@@ -1,0 +1,23 @@
+.overflow-table {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.position-stc {
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.side-nnav {
+    position: relative;
+}
+
+.copy-betul {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+
+

@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* CSS RESET */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* BASE */
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.button {
+  font-family: "Poppins", sans-serif;
+
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: block;
+  display: flex;
+  background-color: #2ac48f;
+  width: 73px;
+  height: 40px;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.button-import {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: block;
+  display: flex;
+  background-color: #2ac48f;
+  padding: 7px 12px;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.button:hover {
+  background-color: #29ac7e;
+}
+.button-import:hover {
+  background-color: #29ac7e;
+}
+.wave {
+  position: fixed;
+  z-index: -999;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.text-center {
+  text-align: center;
+}
+/* CONTAINER */
+.info_table {
+  display: flex;
+  justify-content: space-between;
+}
+.container_down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 7px;
+}
+.container_down_select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+.info_table .container_down {
+  color: #757575;
+  font-weight: 600;
+  display: flex;
+  gap: 0.3rem;
+}
+.container {
+  margin-top: 9rem;
+  padding: 0 2rem;
+  animation: showtable 1s alternate;
+}
+/* @keyframes showtable {
+  0% {
+    transform: translateX(-1000px);
+  }
+} */
+.container_up h2 {
+  color: #757575;
+}
+.container_up {
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.add {
+  display: flex;
+  align-items: center;
+  padding: 7px 12px;
+  background-color: #2ac48f;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.back-table {
+  display: flex;
+  align-items: center;
+  padding: 7px 12px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.back {
+  color: #757575;
+}
+.adduser {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+}
+.table_container {
+  border-radius: 15px;
+  width: auto;
+  max-height: 450px;
+  box-shadow: 0 4px 18px rgb(0, 0, 0, 0.1);
+  border-bottom: 10px solid #2ac48f;
+  overflow-y: scroll;
+}
+.table {
+  background-color: white;
+  font-weight: 600;
+  width: 100%;
+  border-collapse: collapse;
+}
+.table thead tr {
+  border-radius: 5px 5px 0 0;
+}
+th {
+  background-color: #2ac48f;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+.table th,
+td {
+  padding: 12px 15px;
+  text-align: center;
+}
+.edit {
+  gap: 0.5rem;
+}
+/* .table tbody tr {
+  border-bottom: 2px solid #757575;
+} */
+/* .table tbody tr:last-of-type {
+  border-bottom: 2px solid #2ac48f;
+} */
+.table tbody tr:nth-child(odd) {
+  color: #757575;
+}
+.table tbody tr:nth-child(even) {
+  color: #2ac48f;
+  background-color: #f3f3f3;
+}
+.import {
+  display: flex;
+  align-items: center;
+}
+.select {
+  color: #2ac48f;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.filter {
+  height: 28px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 3.5fr 1fr;
+  column-gap: 0.5rem;
+}
+.filter p {
+  color: #757575;
+  font-weight: 600;
+}
+.find {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: #757575;
+  padding: 7px 12px;
+  border-radius: 25px;
+  color: white;
+}
+.select_jurusan {
+  color: #757575;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-bottom: 2px solid #757575;
+  box-sizing: border-box;
+}
+select {
+  font-family: "Poppins", sans-serif;
+  color: #757575;
+
+  border: none;
+  /* border-bottom: 2px solid #757575; */
+  font-weight: 600;
+  font-size: 1rem;
+}
+@media (max-width: 600px) {
+  .container_up h2 {
+    display: none;
+  }
+  .tambah-text {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .add {
+    padding: 0;
+    justify-content: center;
+    padding: 0.7rem;
+  }
+  .container_down p {
+    display: none;
+  }
+}
